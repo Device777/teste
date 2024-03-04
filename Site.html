@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Loja Online</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #202020;
+    }
+
+    header {
+        background-color: #333;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .produto {
+        background-color: rgb(70, 69, 69);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px;
+        width: 30%;
+        text-align: center;
+    }
+
+    .produto h2 {
+        color: rgb(255, 255, 255);
+    }
+
+    .produto p {
+        color: rgb(255, 255, 255);
+    }
+
+    .produto img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .btn-comprar {
+        background-color: #f71111;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-comprar:hover {
+        background-color: #45a049;
+    }
+
+    .preco {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Device Ware</h1>
+</header>
+
+<div class="container">
+    <div class="produto">
+        <img src="https://via.placeholder.com/200" alt="Produto 1">
+        <h2>Device Ware Mensal</h2>
+        <p>Descrição do Produto 1</p>
+        <span class="preco">R$ 30,00</span>
+        <button class="btn-comprar" onclick="comprar('https://www.tipa.ai/device777')">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="https://via.placeholder.com/200" alt="Produto 2">
+        <h2>Device Ware Trimensal</h2>
+        <p>Descrição do Produto 2</p>
+        <span class="preco">R$ 50,00</span>
+        <button class="btn-comprar" onclick="comprar('https://www.tipa.ai/device777')">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="https://via.placeholder.com/200" alt="Produto 3">
+        <h2>Device Ware Lifetime</h2>
+        <p>Descrição do Produto 3</p>
+        <span class="preco">R$ 90,00</span>
+        <button class="btn-comprar" onclick="comprar('https://www.tipa.ai/device777')">Comprar</button>
+    </div>
+</div>
+
+<script>
+    function comprar(link) {
+        window.open(link, '_blank');
+    }
+</script>
+
+</body>
+</html>
